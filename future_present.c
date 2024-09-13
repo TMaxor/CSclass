@@ -16,7 +16,7 @@ int main(void) {
     printf("Enter Number of Years: ");
     scanf("\n%d", &years);
     printf("With a principal of $%.2f, at an intrest rate of %.2lf%% for %.0d years:", principal, interest_rate, years);
-    printf("\nFuture Value: %.2lf", pow((interest_rate/100+1), years)*principal);
+    printf("\nFuture Value: $%.2lf", pow((interest_rate/100+1), years)*principal);
 
     printf("\n\n");
 
@@ -28,7 +28,7 @@ int main(void) {
     scanf("\n%d", &years);
     printf("With a future value of $%.2lf, at an intrest rate of %.2lf%% for %.0d years:", future_value, interest_rate, years);
     x = pow(interest_rate/100+1, years);
-    printf("\nPresent Value: %.2lf", future_value/x);
+    printf("\nPresent Value: $%.2lf", future_value/x);
 
     return 0;
 }
